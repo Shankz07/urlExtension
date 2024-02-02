@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="shortenSection">
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput">
+    <button id="shortenButton">Shorten URL</button>
+    <button id="savedUrlsButton">Saved URLs</button>
+    <p id="shortenedUrl"></p>
+  </div>
+
+  <div id="savedUrlsSection" class="hidden">
+    <h2>Saved URLs</h2>
+    <ul id="savedUrlsList"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+  <script src="savedUrls.js"></script>
+</body>
+</html>
